@@ -1,6 +1,7 @@
-FROM node:lts-alpine
+FROM node:16-alpine
 WORKDIR /app
 COPY package.json .
+RUN npm set timeout=100000
 RUN npm install
 RUN npm i pm2 -g
 COPY . .
