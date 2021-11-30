@@ -33,10 +33,10 @@ services:
     ports:
       - 80:80
       - 443:443
-    volumes:
-      - type: bind
-        source: /etc/letsencrypt
-        target: /etc/letsencrypt
+    #volumes:
+      #- type: bind
+      #  source: /etc/letsencrypt
+      #  target: /etc/letsencrypt
     restart: unless-stopped
     depends_on:
       - api

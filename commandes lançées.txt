@@ -1,6 +1,0 @@
-            docker-compose -f docker-compose.dev.yml build api "pas d'erreur"
-sortie2.txt docker-compose -f docker-compose.dev.yml run api "erreurs. Pas de connexion DB"
-            docker-compose -f docker-compose.prod.yml build api "pas d'erreur"
-sortie4.txt docker-compose -f docker-compose.prod.yml run api "erreurs"
-Sortie5.txt docker-compose -f docker-compose.prod.yml up --build "erreur"
-sortie6.txt MONGO_USERNAME=paul MONGO_PWD=123 docker-compose -f docker-compose.prod.yml up --build
